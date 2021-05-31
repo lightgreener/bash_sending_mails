@@ -1,9 +1,9 @@
-Sending warning letter
+Sending email with mailx
 
 There are two ways to do it.
-First one:  internal mail tool, not recommended.
+First one:  internal mail tool, not recommended. it is slow and may be indentified as junk mail
 
-Second one: external mail tool call mailx
+Second one: external mail tool called mailx
 
 install 
 yum install mailx -y  --------- command
@@ -20,6 +20,11 @@ set smtp-auth=login
 set ssl-verify=ignore
 set nss-config-dir=/etc/pki/nssdb/
 
-all done.
+there is a problem :
+Error in certificate: Peer's certificate issuer is not recognized.
+
+can not fix it
+
+all done 
 
 
