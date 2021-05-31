@@ -13,9 +13,12 @@ open /etc/mail.rc file
 
 add following info  to this file
 
-set from=yourEmailAddress smtp=smtp.emailSite
-set smtp-auth-user=yourEmailAddress smtp-auto-password=password
-set smtp-auth-login
+set smtp-use-starttls      # add this
+set from=yourEmailAddress smtp=smtps://smtp.gmail.com:587
+set smtp-auth-user=yourEmailAddress smtp-auth-password=password
+set smtp-auth=login
+set ssl-verify=ignore
+set nss-config-dir=/etc/pki/nssdb/
 
 all done.
 
